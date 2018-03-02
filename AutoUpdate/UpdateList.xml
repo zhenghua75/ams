@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<AutoUpdater>
+	<Description>ams autoUpdate</Description>
+	<Updater>
+		<Url>http://localhost/ams_fb/</Url>
+		<LastUpdateTime>2009-03-05</LastUpdateTime>
+	</Updater>
+	<Application applicationId = "ams">
+		<EntryPoint>ams.exe</EntryPoint>
+		<Location>.</Location>
+		<Version>1.0.0.2</Version>
+	</Application>
+	<Files>
+		<File Ver="1.0.0.2" Name= "rpx/BillList.rpx" />
+		<File Ver="1.0.0.2" Name= "rpx/BIModle.rpx" />
+		<File Ver="1.0.0.1" Name= "ams.vshost.exe.config" />
+		<File Ver="1.0.0.1" Name= "ams.vshost.exe" />
+		<File Ver="1.0.0.1" Name= "mwrf32.dll" />
+		<File Ver="1.0.0.1" Name= "ams.vshost.application" />
+		<File Ver="1.0.0.1" Name= "Card.dll" />
+		<File Ver="1.0.0.1" Name= "福宝会员管理系统帮助.mht" />
+		<File Ver="1.0.0.1" Name= "ams.exe.config" />
+		<File Ver="1.0.0.1" Name= "ams.exe.manifest" />
+		<File Ver="1.0.0.1" Name= "ams.application" />
+		<File Ver="1.0.0.1" Name= "ams.exe" />
+		<File Ver="1.0.0.1" Name= "ams.pdb" />
+		<File Ver="1.0.0.1" Name= "Interop.Card.dll" />
+	</Files>
+</AutoUpdater>

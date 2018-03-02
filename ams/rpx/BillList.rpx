@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.1" PrintWidth="6488.74" DocumentName="ARNet Document" ScriptLang="C#" MasterReport="0">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-family: Times New Roman; font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="Detail" Name="detail" Height="240" BackColor="16777215">
+      <Control Type="AR.Field" Name="textBox1" DataField="vcGoodsName" Left="0" Top="0" Width="992.1259" Height="212.5984" Text="会员卡挂失" Style="ddo-char-set: 1; text-align: center; font-size: 8pt; font-family: 宋体; " />
+      <Control Type="AR.Field" Name="textBox21" DataField="iCount" Left="1080" Top="0" Width="354.3307" Height="212.5984" Text="111" Style="ddo-char-set: 1; text-align: center; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Field" Name="textBox23" DataField="nPrice" Left="1620" Top="0" Width="956.693" Height="212.5984" Text="1234567.00" Style="ddo-char-set: 1; text-align: center; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Field" Name="textBox24" DataField="nRate" Left="2880" Top="0" Width="810" Height="180" Text="111%" OutputFormat="0%" Style="ddo-char-set: 1; text-align: center; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Field" Name="textBox25" DataField="nCharge" Left="3870" Top="0" Width="956.693" Height="212.5984" Text="1234567.00" Style="ddo-char-set: 1; text-align: center; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Line" Name="line5" X1="0" Y1="270" X2="5940" Y2="270" LineColor="8421504" />
+    </Section>
+  </Sections>
+  <ReportComponentTray />
+  <PageSettings LeftMargin="0" RightMargin="0" TopMargin="0" BottomMargin="0" />
+  <Parameters />
+</ActiveReportsLayout>

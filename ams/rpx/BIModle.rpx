@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.1" PrintWidth="6014.526" DocumentName="ARNet Document" ScriptLang="C#" MasterReport="0">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-style: normal; text-decoration: none; font-weight: normal; color: Black; font-family: &quot;宋体&quot;; font-size: 9pt; ddo-char-set: 134; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; ddo-char-set: 204; " />
+    <Style Name="Heading2" Value="font-family: Times New Roman; font-size: 14pt; font-weight: bold; font-style: italic; ddo-char-set: 204; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; ddo-char-set: 204; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="GroupHeader" Name="groupHeader1" Height="2475" BackColor="16777215">
+      <Control Type="AR.Label" Name="label7" Left="540" Top="270" Width="496.063" Height="248.0315" Caption="M&amp;W" Style="ddo-char-set: 1; text-align: center; font-size: 10pt; font-family: 宋体; " />
+      <Control Type="AR.Label" Name="label26" Left="2610" Top="270" Width="1948.818" Height="389.7638" Caption="福保文化城" ClassName="Heading1" Style="ddo-char-set: 1; text-align: center; font-size: 18pt; font-family: 宋体; " />
+      <Control Type="AR.Label" Name="label27" Left="990" Top="1530" Width="708.6614" Height="212.5984" Caption="顾客：" Style="ddo-char-set: 1; text-align: left; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Label" Name="label28" Left="990" Top="1710" Width="673.2284" Height="212.5984" Caption="日期：" Style="ddo-char-set: 1; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Label" Name="label29" Left="990" Top="1890" Width="956.693" Height="177.1654" Caption="上期余额：" Style="ddo-char-set: 1; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Label" Name="label30" Left="4050" Top="1530" Width="673.2284" Height="212.5984" Caption="单号：" Style="ddo-char-set: 1; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Label" Name="label31" Left="4050" Top="1710" Width="992.1259" Height="212.5984" Caption="会员卡号：" Style="ddo-char-set: 1; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Field" Name="textBox1" DataField="vcBillType" Left="2250" Top="810" Width="2622.047" Height="318.8976" Text="textBox1" ClassName="Heading2" Style="ddo-char-set: 1; text-align: center; font-size: 11pt; font-family: 宋体; " />
+      <Control Type="AR.Field" Name="textBox9" DataField="vcAssName" Left="1530" Top="1530" Width="1452.755" Height="212.5984" Text="textBox1" Style="ddo-char-set: 1; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Field" Name="textBox10" DataField="dtPrintDate" Left="1530" Top="1710" Width="1452.755" Height="212.5984" Text="textBox1" OutputFormat="yyyy年MM月dd日" Style="ddo-char-set: 1; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Field" Name="textBox11" DataField="dLastCharge" Left="2070" Top="1890" Width="956.693" Height="212.5986" Text="textBox1" Style="ddo-char-set: 1; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Field" Name="textBox12" DataField="iBillNo" Left="4590" Top="1530" Width="1133.858" Height="212.5984" Text="textBox1" Style="ddo-char-set: 1; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Field" Name="textBox13" DataField="vcAssCardID" Left="4950" Top="1710" Width="779.5276" Height="212.5984" Text="textBox1" Style="ddo-char-set: 1; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Field" Name="textBox14" DataField="dLastIg" Left="4950" Top="1890" Width="779.5276" Height="212.5986" Text="textBox1" Style="ddo-char-set: 1; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Line" Name="line5" X1="990" Y1="2160" X2="5940" Y2="2160" />
+      <Control Type="AR.Label" Name="label33" Left="990" Top="2250" Width="956.693" Height="212.5984" Caption="品名" ClassName="Heading3" Style="ddo-char-set: 1; text-align: center; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Label" Name="label34" Left="2070" Top="2250" Width="425.1969" Height="212.5984" Caption="数量" ClassName="Heading3" Style="ddo-char-set: 1; text-align: center; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Label" Name="label36" Left="2700" Top="2250" Width="958.1103" Height="212.5984" Caption="单价" ClassName="Heading3" Style="ddo-char-set: 1; text-align: center; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Label" Name="label38" Left="4860" Top="2250" Width="958.1103" Height="212.5984" Caption="金额" ClassName="Heading3" Style="ddo-char-set: 1; text-align: center; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Line" Name="line6" X1="993.6" Y1="2480.315" X2="5947.2" Y2="2480.315" />
+      <Control Type="AR.Label" Name="label37" Left="3780" Top="2250" Width="957.6" Height="213.12" Caption="折扣" ClassName="Heading3" Style="ddo-char-set: 1; text-align: center; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Label" Name="label32" Left="4050" Top="1890" Width="956.693" Height="212.5984" Caption="上期积分：" Style="ddo-char-set: 1; font-size: 9pt; font-family: 宋体; " />
+    </Section>
+    <Section Type="Detail" Name="detail" Height="0" BackColor="16777215">
+      <Control Type="AR.Subreport" Name="subReport1" Left="990" Top="0" Width="4860" Height="270" ReportName="subReport1" />
+    </Section>
+    <Section Type="GroupFooter" Name="groupFooter1" Height="2070" BackColor="16777215">
+      <Control Type="AR.Label" Name="label39" Left="1080" Top="180" Width="921.2598" Height="212.5984" Caption="收银员：" Style="ddo-char-set: 1; text-align: right; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Label" Name="label40" Left="1080" Top="360" Width="956.693" Height="212.5984" Caption="当前余额：" Style="ddo-char-set: 1; text-align: right; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Label" Name="label41" Left="4050" Top="360" Width="956.693" Height="212.5984" Caption="当前积分：" Style="ddo-char-set: 1; text-align: right; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Label" Name="label42" Left="4410" Top="0" Width="602.3624" Height="212.5984" Caption="合计：" Style="ddo-char-set: 1; text-align: right; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Label" Name="label43" Left="4410" Top="180" Width="708.6614" Height="212.5984" Caption="总计：" Style="ddo-char-set: 1; text-align: right; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Label" Name="label44" Left="4050" Top="540" Width="956.693" Height="212.5984" Caption="本次积分：" Style="ddo-char-set: 1; text-align: right; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Line" Name="line7" X1="990" Y1="810" X2="5940" Y2="810" />
+      <Control Type="AR.Label" Name="label45" Left="1080" Top="810" Width="1842.52" Height="212.5984" Caption="地址: 昆明市官渡六甲福保" Style="ddo-char-set: 1; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Label" Name="label46" Left="1080" Top="1260" Width="2834.646" Height="212.5984" Caption="游福天宝地，有福有宝-福保文化城" Style="ddo-char-set: 1; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Label" Name="label47" Left="1080" Top="1710" Width="1062.992" Height="283.4646" Caption="会员签名：" Style="ddo-char-set: 1; font-family: 宋体; " />
+      <Control Type="AR.Line" Name="line8" X1="1980" Y1="1890" X2="3420" Y2="1890" LineColor="8421504" LineStyle="5" />
+      <Control Type="AR.Label" Name="label48" Left="1080" Top="1080" Width="2055.118" Height="212.5984" Caption="电话: 7328000  7328977" Style="ddo-char-set: 1; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Field" Name="textBox21" DataField="vcOperName" Left="1980" Top="180" Width="992.1259" Height="212.5984" Text="textBox1" Style="ddo-char-set: 1; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Field" Name="textBox22" DataField="dCharge" Left="1980" Top="360" Width="992.1259" Height="212.5984" Text="textBox1" Style="ddo-char-set: 1; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Field" Name="textBox23" DataField="dSumFee" Left="5040" Top="0" Width="708.6614" Height="212.5984" Text="textBox1" Style="ddo-char-set: 1; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Field" Name="textBox24" DataField="dTotalFee" Left="5040" Top="180" Width="708.6614" Height="212.5984" Text="textBox1" Style="ddo-char-set: 1; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Field" Name="textBox25" DataField="dIgGet" Left="5040" Top="540" Width="708.6614" Height="212.5984" Text="textBox1" Style="ddo-char-set: 1; font-size: 9pt; font-family: 宋体; " />
+      <Control Type="AR.Field" Name="textBox26" DataField="dIgValue" Left="5040" Top="360" Width="708.6614" Height="212.5984" Text="textBox1" Style="ddo-char-set: 1; font-size: 9pt; font-family: 宋体; " />
+    </Section>
+  </Sections>
+  <ReportComponentTray />
+  <DataSources>
+    <OleDbDataSource ConnectE="fnDeMoPQcekew7TB2OSGi7x3WeWTW/JtgZrwaJKvVgRwWiJin99ggaGVayfjRUW/9TP/+BH3Eq6IsFQAlnIBBXPxT0g5wW5fjdSPx/RTx86EsUcKuTFoD5FmaqMU7iHuPu+e1X0yHSWxsnsH16zGWQ==" SQL="select top 10 a.*,b.* from tbBillList a&#xD;&#xA; left outer join tbBillInvoice b on a.iBillNo=b.iBillNo" />
+  </DataSources>
+  <Script><![CDATA[public void detail_Format() 
+{ 
+ try
+   {
+
+     DataDynamics.ActiveReports.SubReport rptSubCtl = ((DataDynamics.ActiveReports.SubReport) rpt.Sections["detail"].Controls["subReport1"]);
+     DataDynamics.ActiveReports.ActiveReport3 rptSub = new DataDynamics.ActiveReports.ActiveReport3(); 
+     //rptSub.LoadLayout(@".\rpx\BillList.rpx");
+     rptSub.LoadLayout(System.AppDomain.CurrentDomain.BaseDirectory + System.AppDomain.CurrentDomain.RelativeSearchPath+@"//rpx//BillList.rpx");
+     rptSub.DataSource = item.MyList; 
+     rptSubCtl.Report = rptSub; 
+  }
+  catch
+  {
+  }
+}]]></Script>
+  <PageSettings LeftMargin="340" RightMargin="340" TopMargin="0" BottomMargin="0" PaperSize="0" PaperWidth="12240" PaperHeight="16560" PaperName="Custom paper" />
+  <Parameters />
+</ActiveReportsLayout>

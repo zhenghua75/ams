@@ -1,0 +1,1557 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="AMSModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+        <EntityContainer Name="AMSModelStoreContainer">
+          <EntitySet Name="dtproperties" EntityType="AMSModel.Store.dtproperties" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbAssociator" EntityType="AMSModel.Store.tbAssociator" store:Type="Tables" store:Schema="dbo" store:Name="tbAssociator">
+            <DefiningQuery>SELECT 
+      [tbAssociator].[cAssSex] AS [cAssSex], 
+      [tbAssociator].[dtInAssDate] AS [dtInAssDate], 
+      [tbAssociator].[dtOperDate] AS [dtOperDate], 
+      [tbAssociator].[iAssAge] AS [iAssAge], 
+      [tbAssociator].[iAssID] AS [iAssID], 
+      [tbAssociator].[vcAssLevel] AS [vcAssLevel], 
+      [tbAssociator].[vcAssName] AS [vcAssName], 
+      [tbAssociator].[vcAssNbr] AS [vcAssNbr], 
+      [tbAssociator].[vcAssState] AS [vcAssState], 
+      [tbAssociator].[vcAssType] AS [vcAssType], 
+      [tbAssociator].[vcComAddress] AS [vcComAddress], 
+      [tbAssociator].[vcComFax] AS [vcComFax], 
+      [tbAssociator].[vcComments] AS [vcComments], 
+      [tbAssociator].[vcCompanyName] AS [vcCompanyName], 
+      [tbAssociator].[vcComPhone] AS [vcComPhone], 
+      [tbAssociator].[vcComPostID] AS [vcComPostID], 
+      [tbAssociator].[vcEmail] AS [vcEmail], 
+      [tbAssociator].[vcLinkAddress] AS [vcLinkAddress], 
+      [tbAssociator].[vcLinkPhone] AS [vcLinkPhone], 
+      [tbAssociator].[vcMobile] AS [vcMobile], 
+      [tbAssociator].[vcOperID] AS [vcOperID], 
+      [tbAssociator].[vcPassport] AS [vcPassport], 
+      [tbAssociator].[vcPostID] AS [vcPostID]
+      FROM [dbo].[tbAssociator] AS [tbAssociator]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="tbAssociatorCard" EntityType="AMSModel.Store.tbAssociatorCard" store:Type="Tables" store:Schema="dbo" store:Name="tbAssociatorCard">
+            <DefiningQuery>SELECT 
+      [tbAssociatorCard].[cCardState] AS [cCardState], 
+      [tbAssociatorCard].[dtCardEffDate] AS [dtCardEffDate], 
+      [tbAssociatorCard].[dtCardExpDate] AS [dtCardExpDate], 
+      [tbAssociatorCard].[dtCardPutDate] AS [dtCardPutDate], 
+      [tbAssociatorCard].[iAssID] AS [iAssID], 
+      [tbAssociatorCard].[vcAssCardID] AS [vcAssCardID], 
+      [tbAssociatorCard].[vcAssPwd] AS [vcAssPwd], 
+      [tbAssociatorCard].[vcCardLevel] AS [vcCardLevel], 
+      [tbAssociatorCard].[vcOperID] AS [vcOperID]
+      FROM [dbo].[tbAssociatorCard] AS [tbAssociatorCard]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="tbBillInvoice" EntityType="AMSModel.Store.tbBillInvoice" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbBillList" EntityType="AMSModel.Store.tbBillList" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbBillSerialNo" EntityType="AMSModel.Store.tbBillSerialNo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbBusiFee" EntityType="AMSModel.Store.tbBusiFee" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbBusiLog" EntityType="AMSModel.Store.tbBusiLog" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbCommCode" EntityType="AMSModel.Store.tbCommCode" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbConsserialNo" EntityType="AMSModel.Store.tbConsserialNo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbConsumption" EntityType="AMSModel.Store.tbConsumption" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbConsumption_01" EntityType="AMSModel.Store.tbConsumption_01" store:Type="Tables" store:Schema="dbo" store:Name="tbConsumption_01">
+            <DefiningQuery>SELECT 
+      [tbConsumption_01].[dtConsDate] AS [dtConsDate], 
+      [tbConsumption_01].[iAssID] AS [iAssID], 
+      [tbConsumption_01].[iConsCount] AS [iConsCount], 
+      [tbConsumption_01].[iConsSerial] AS [iConsSerial], 
+      [tbConsumption_01].[nBalance] AS [nBalance], 
+      [tbConsumption_01].[nConsCharge1] AS [nConsCharge1], 
+      [tbConsumption_01].[nConsCharge2] AS [nConsCharge2], 
+      [tbConsumption_01].[nConsRate] AS [nConsRate], 
+      [tbConsumption_01].[nGoodsPrice] AS [nGoodsPrice], 
+      [tbConsumption_01].[nLastBalance] AS [nLastBalance], 
+      [tbConsumption_01].[vcAssCardID] AS [vcAssCardID], 
+      [tbConsumption_01].[vcClass] AS [vcClass], 
+      [tbConsumption_01].[vcComments] AS [vcComments], 
+      [tbConsumption_01].[vcGoodsCode] AS [vcGoodsCode], 
+      [tbConsumption_01].[vcOperID] AS [vcOperID]
+      FROM [dbo].[tbConsumption_01] AS [tbConsumption_01]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="tbConsumption_20060730" EntityType="AMSModel.Store.tbConsumption_20060730" store:Type="Tables" store:Schema="dbo" store:Name="tbConsumption_20060730">
+            <DefiningQuery>SELECT 
+      [tbConsumption_20060730].[dtConsDate] AS [dtConsDate], 
+      [tbConsumption_20060730].[iAssID] AS [iAssID], 
+      [tbConsumption_20060730].[iConsCount] AS [iConsCount], 
+      [tbConsumption_20060730].[iConsSerial] AS [iConsSerial], 
+      [tbConsumption_20060730].[nBalance] AS [nBalance], 
+      [tbConsumption_20060730].[nConsCharge1] AS [nConsCharge1], 
+      [tbConsumption_20060730].[nConsCharge2] AS [nConsCharge2], 
+      [tbConsumption_20060730].[nConsRate] AS [nConsRate], 
+      [tbConsumption_20060730].[nGoodsPrice] AS [nGoodsPrice], 
+      [tbConsumption_20060730].[nLastBalance] AS [nLastBalance], 
+      [tbConsumption_20060730].[vcAssCardID] AS [vcAssCardID], 
+      [tbConsumption_20060730].[vcClass] AS [vcClass], 
+      [tbConsumption_20060730].[vcComments] AS [vcComments], 
+      [tbConsumption_20060730].[vcGoodsCode] AS [vcGoodsCode], 
+      [tbConsumption_20060730].[vcOperID] AS [vcOperID]
+      FROM [dbo].[tbConsumption_20060730] AS [tbConsumption_20060730]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="tbConsumption_tmp" EntityType="AMSModel.Store.tbConsumption_tmp" store:Type="Tables" store:Schema="dbo" store:Name="tbConsumption_tmp">
+            <DefiningQuery>SELECT 
+      [tbConsumption_tmp].[dtConsDate] AS [dtConsDate], 
+      [tbConsumption_tmp].[dtOperDate] AS [dtOperDate], 
+      [tbConsumption_tmp].[iAssID] AS [iAssID], 
+      [tbConsumption_tmp].[iConsCount] AS [iConsCount], 
+      [tbConsumption_tmp].[iConsSerial] AS [iConsSerial], 
+      [tbConsumption_tmp].[iLink] AS [iLink], 
+      [tbConsumption_tmp].[iNO] AS [iNO], 
+      [tbConsumption_tmp].[nBalance] AS [nBalance], 
+      [tbConsumption_tmp].[nConsCharge1] AS [nConsCharge1], 
+      [tbConsumption_tmp].[nConsCharge2] AS [nConsCharge2], 
+      [tbConsumption_tmp].[nConsRate] AS [nConsRate], 
+      [tbConsumption_tmp].[nGoodsPrice] AS [nGoodsPrice], 
+      [tbConsumption_tmp].[nLastBalance] AS [nLastBalance], 
+      [tbConsumption_tmp].[vcAssCardID] AS [vcAssCardID], 
+      [tbConsumption_tmp].[vcClass] AS [vcClass], 
+      [tbConsumption_tmp].[vcComments] AS [vcComments], 
+      [tbConsumption_tmp].[vcFlag] AS [vcFlag], 
+      [tbConsumption_tmp].[vcGoodsCode] AS [vcGoodsCode], 
+      [tbConsumption_tmp].[vcOperID] AS [vcOperID]
+      FROM [dbo].[tbConsumption_tmp] AS [tbConsumption_tmp]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="tbFillFee" EntityType="AMSModel.Store.tbFillFee" store:Type="Tables" store:Schema="dbo" store:Name="tbFillFee">
+            <DefiningQuery>SELECT 
+      [tbFillFee].[dtFillDate] AS [dtFillDate], 
+      [tbFillFee].[iAssID] AS [iAssID], 
+      [tbFillFee].[iFillSerial] AS [iFillSerial], 
+      [tbFillFee].[nBalance] AS [nBalance], 
+      [tbFillFee].[nFillFee] AS [nFillFee], 
+      [tbFillFee].[nLastBalance] AS [nLastBalance], 
+      [tbFillFee].[nPromFee] AS [nPromFee], 
+      [tbFillFee].[vcAssCardID] AS [vcAssCardID], 
+      [tbFillFee].[vcComments] AS [vcComments], 
+      [tbFillFee].[vcOperID] AS [vcOperID], 
+      [tbFillFee].[vcOperType] AS [vcOperType]
+      FROM [dbo].[tbFillFee] AS [tbFillFee]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="tbFillFee_20060730" EntityType="AMSModel.Store.tbFillFee_20060730" store:Type="Tables" store:Schema="dbo" store:Name="tbFillFee_20060730">
+            <DefiningQuery>SELECT 
+      [tbFillFee_20060730].[dtFillDate] AS [dtFillDate], 
+      [tbFillFee_20060730].[iAssID] AS [iAssID], 
+      [tbFillFee_20060730].[iFillSerial] AS [iFillSerial], 
+      [tbFillFee_20060730].[nBalance] AS [nBalance], 
+      [tbFillFee_20060730].[nFillFee] AS [nFillFee], 
+      [tbFillFee_20060730].[nLastBalance] AS [nLastBalance], 
+      [tbFillFee_20060730].[nPromFee] AS [nPromFee], 
+      [tbFillFee_20060730].[vcAssCardID] AS [vcAssCardID], 
+      [tbFillFee_20060730].[vcComments] AS [vcComments], 
+      [tbFillFee_20060730].[vcOperID] AS [vcOperID], 
+      [tbFillFee_20060730].[vcOperType] AS [vcOperType]
+      FROM [dbo].[tbFillFee_20060730] AS [tbFillFee_20060730]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="tbFillProm" EntityType="AMSModel.Store.tbFillProm" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbGoods" EntityType="AMSModel.Store.tbGoods" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbGoodsRate" EntityType="AMSModel.Store.tbGoodsRate" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbIgSerialNo" EntityType="AMSModel.Store.tbIgSerialNo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbIntegral" EntityType="AMSModel.Store.tbIntegral" store:Type="Tables" store:Schema="dbo" store:Name="tbIntegral">
+            <DefiningQuery>SELECT 
+      [tbIntegral].[iAssID] AS [iAssID], 
+      [tbIntegral].[iIgValue] AS [iIgValue], 
+      [tbIntegral].[nBalance] AS [nBalance], 
+      [tbIntegral].[vcAssCardID] AS [vcAssCardID]
+      FROM [dbo].[tbIntegral] AS [tbIntegral]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="tbIntegralLog" EntityType="AMSModel.Store.tbIntegralLog" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbLimit" EntityType="AMSModel.Store.tbLimit" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbOper" EntityType="AMSModel.Store.tbOper" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbOperLevel" EntityType="AMSModel.Store.tbOperLevel" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbOperLimit" EntityType="AMSModel.Store.tbOperLimit" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="dtproperties">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="property" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="lvalue" Type="image" />
+          <Property Name="objectid" Type="int" />
+          <Property Name="property" Type="varchar" Nullable="false" MaxLength="64" />
+          <Property Name="uvalue" Type="nvarchar" MaxLength="255" />
+          <Property Name="value" Type="varchar" MaxLength="255" />
+          <Property Name="version" Type="int" Nullable="false" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“AMS-FB.dbo.tbAssociator”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="tbAssociator">
+          <Key>
+            <PropertyRef Name="iAssID" />
+            <PropertyRef Name="vcAssName" />
+          </Key>
+          <Property Name="cAssSex" Type="char" MaxLength="2" />
+          <Property Name="dtInAssDate" Type="datetime" />
+          <Property Name="dtOperDate" Type="datetime" />
+          <Property Name="iAssAge" Type="int" />
+          <Property Name="iAssID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="vcAssLevel" Type="varchar" MaxLength="5" />
+          <Property Name="vcAssName" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="vcAssNbr" Type="varchar" MaxLength="20" />
+          <Property Name="vcAssState" Type="char" MaxLength="1" />
+          <Property Name="vcAssType" Type="varchar" MaxLength="5" />
+          <Property Name="vcComAddress" Type="varchar" MaxLength="50" />
+          <Property Name="vcComFax" Type="varchar" MaxLength="50" />
+          <Property Name="vcComments" Type="varchar" MaxLength="100" />
+          <Property Name="vcCompanyName" Type="varchar" MaxLength="50" />
+          <Property Name="vcComPhone" Type="varchar" MaxLength="25" />
+          <Property Name="vcComPostID" Type="varchar" MaxLength="10" />
+          <Property Name="vcEmail" Type="varchar" MaxLength="30" />
+          <Property Name="vcLinkAddress" Type="varchar" MaxLength="50" />
+          <Property Name="vcLinkPhone" Type="varchar" MaxLength="25" />
+          <Property Name="vcMobile" Type="varchar" MaxLength="30" />
+          <Property Name="vcOperID" Type="varchar" MaxLength="10" />
+          <Property Name="vcPassport" Type="varchar" MaxLength="20" />
+          <Property Name="vcPostID" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“AMS-FB.dbo.tbAssociatorCard”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="tbAssociatorCard">
+          <Key>
+            <PropertyRef Name="iAssID" />
+            <PropertyRef Name="vcAssCardID" />
+          </Key>
+          <Property Name="cCardState" Type="char" MaxLength="1" />
+          <Property Name="dtCardEffDate" Type="datetime" />
+          <Property Name="dtCardExpDate" Type="datetime" />
+          <Property Name="dtCardPutDate" Type="datetime" />
+          <Property Name="iAssID" Type="bigint" Nullable="false" />
+          <Property Name="vcAssCardID" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="vcAssPwd" Type="varchar" MaxLength="6" />
+          <Property Name="vcCardLevel" Type="varchar" MaxLength="5" />
+          <Property Name="vcOperID" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="tbBillInvoice">
+          <Key>
+            <PropertyRef Name="iBillNo" />
+          </Key>
+          <Property Name="dCharge" Type="numeric" Precision="10" Scale="2" />
+          <Property Name="dIgGet" Type="numeric" Precision="10" Scale="2" />
+          <Property Name="dIgValue" Type="numeric" Precision="10" Scale="2" />
+          <Property Name="dLastCharge" Type="numeric" Precision="10" Scale="2" />
+          <Property Name="dLastIg" Type="numeric" Precision="10" Scale="2" />
+          <Property Name="dMealFee" Type="numeric" Precision="10" Scale="2" />
+          <Property Name="dServiceFee" Type="numeric" Precision="10" Scale="2" />
+          <Property Name="dSumFee" Type="numeric" Precision="10" Scale="2" />
+          <Property Name="dtCreateDate" Type="datetime" />
+          <Property Name="dTotalFee" Type="numeric" Precision="10" Scale="2" />
+          <Property Name="dtPrintDate" Type="datetime" />
+          <Property Name="iBillNo" Type="bigint" Nullable="false" />
+          <Property Name="vcAssCardID" Type="varchar" MaxLength="10" />
+          <Property Name="vcAssName" Type="varchar" MaxLength="25" />
+          <Property Name="vcBillType" Type="varchar" MaxLength="5" />
+          <Property Name="vcEffFlag" Type="varchar" MaxLength="5" />
+          <Property Name="vcLinkSerial" Type="varchar" MaxLength="10" />
+          <Property Name="vcOperName" Type="varchar" MaxLength="10" />
+          <Property Name="vcPrintFlag" Type="varchar" MaxLength="5" />
+          <Property Name="vcReserve" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tbBillList">
+          <Key>
+            <PropertyRef Name="iBillNo" />
+            <PropertyRef Name="iNO" />
+          </Key>
+          <Property Name="iBillNo" Type="bigint" Nullable="false" />
+          <Property Name="iCount" Type="int" />
+          <Property Name="iNO" Type="bigint" Nullable="false" />
+          <Property Name="nCharge" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="nPrice" Type="numeric" Precision="10" Scale="2" />
+          <Property Name="nRate" Type="numeric" Precision="5" Scale="2" />
+          <Property Name="vcGoodsName" Type="varchar" MaxLength="50" />
+          <Property Name="vcUnit" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="tbBillSerialNo">
+          <Key>
+            <PropertyRef Name="iSerialNo" />
+          </Key>
+          <Property Name="iSerialNo" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="vcFill" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="tbBusiFee">
+          <Key>
+            <PropertyRef Name="iSerial" />
+          </Key>
+          <Property Name="dtOperDate" Type="datetime" />
+          <Property Name="iAssID" Type="bigint" />
+          <Property Name="iSerial" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="nFee" Type="numeric" Precision="10" Scale="2" />
+          <Property Name="vcAssCardID" Type="varchar" MaxLength="10" />
+          <Property Name="vcComments" Type="varchar" MaxLength="100" />
+          <Property Name="vcFeeCode" Type="varchar" MaxLength="5" />
+          <Property Name="vcOperID" Type="varchar" MaxLength="10" />
+          <Property Name="vcSvcCode" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="tbBusiLog">
+          <Key>
+            <PropertyRef Name="iSerial" />
+          </Key>
+          <Property Name="dtOperDate" Type="datetime" />
+          <Property Name="iSerial" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="vcAssCardID" Type="varchar" MaxLength="10" />
+          <Property Name="vcAssName" Type="varchar" MaxLength="25" />
+          <Property Name="vcLinkSerial" Type="varchar" MaxLength="50" />
+          <Property Name="vcOperName" Type="varchar" MaxLength="10" />
+          <Property Name="vcOperType" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="tbCommCode">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="vcCommCode" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="vcComments" Type="varchar" MaxLength="20" />
+          <Property Name="vcCommName" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="vcCommSign" Type="varchar" Nullable="false" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="tbConsserialNo">
+          <Key>
+            <PropertyRef Name="iSerialNo" />
+          </Key>
+          <Property Name="iSerialNo" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="vcFill" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="tbConsumption">
+          <Key>
+            <PropertyRef Name="iConsSerial" />
+            <PropertyRef Name="iNO" />
+          </Key>
+          <Property Name="dtConsDate" Type="datetime" />
+          <Property Name="dtOperDate" Type="datetime" />
+          <Property Name="iAssID" Type="bigint" Nullable="false" />
+          <Property Name="iConsCount" Type="int" />
+          <Property Name="iConsSerial" Type="bigint" Nullable="false" />
+          <Property Name="iLink" Type="bigint" />
+          <Property Name="iNO" Type="bigint" Nullable="false" />
+          <Property Name="nBalance" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="nConsCharge1" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="nConsCharge2" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="nConsRate" Type="numeric" Precision="5" Scale="2" />
+          <Property Name="nGoodsPrice" Type="numeric" Precision="10" Scale="2" />
+          <Property Name="nLastBalance" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="vcAssCardID" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="vcClass" Type="varchar" MaxLength="10" />
+          <Property Name="vcComments" Type="varchar" MaxLength="100" />
+          <Property Name="vcFlag" Type="varchar" MaxLength="2" />
+          <Property Name="vcGoodsCode" Type="varchar" MaxLength="50" />
+          <Property Name="vcOperID" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“AMS-FB.dbo.tbConsumption_01”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="tbConsumption_01">
+          <Key>
+            <PropertyRef Name="iAssID" />
+            <PropertyRef Name="iConsSerial" />
+            <PropertyRef Name="vcAssCardID" />
+          </Key>
+          <Property Name="dtConsDate" Type="datetime" />
+          <Property Name="iAssID" Type="bigint" Nullable="false" />
+          <Property Name="iConsCount" Type="int" />
+          <Property Name="iConsSerial" Type="bigint" Nullable="false" />
+          <Property Name="nBalance" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="nConsCharge1" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="nConsCharge2" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="nConsRate" Type="numeric" Precision="5" Scale="2" />
+          <Property Name="nGoodsPrice" Type="numeric" Precision="10" Scale="2" />
+          <Property Name="nLastBalance" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="vcAssCardID" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="vcClass" Type="varchar" MaxLength="10" />
+          <Property Name="vcComments" Type="varchar" MaxLength="100" />
+          <Property Name="vcGoodsCode" Type="varchar" MaxLength="10" />
+          <Property Name="vcOperID" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“AMS-FB.dbo.tbConsumption_20060730”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="tbConsumption_20060730">
+          <Key>
+            <PropertyRef Name="iAssID" />
+            <PropertyRef Name="iConsSerial" />
+            <PropertyRef Name="vcAssCardID" />
+          </Key>
+          <Property Name="dtConsDate" Type="datetime" />
+          <Property Name="iAssID" Type="bigint" Nullable="false" />
+          <Property Name="iConsCount" Type="int" />
+          <Property Name="iConsSerial" Type="bigint" Nullable="false" />
+          <Property Name="nBalance" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="nConsCharge1" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="nConsCharge2" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="nConsRate" Type="numeric" Precision="5" Scale="2" />
+          <Property Name="nGoodsPrice" Type="numeric" Precision="10" Scale="2" />
+          <Property Name="nLastBalance" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="vcAssCardID" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="vcClass" Type="varchar" MaxLength="10" />
+          <Property Name="vcComments" Type="varchar" MaxLength="100" />
+          <Property Name="vcGoodsCode" Type="varchar" MaxLength="10" />
+          <Property Name="vcOperID" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“AMS-FB.dbo.tbConsumption_tmp”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="tbConsumption_tmp">
+          <Key>
+            <PropertyRef Name="iAssID" />
+            <PropertyRef Name="iConsSerial" />
+            <PropertyRef Name="iNO" />
+            <PropertyRef Name="vcAssCardID" />
+          </Key>
+          <Property Name="dtConsDate" Type="datetime" />
+          <Property Name="dtOperDate" Type="datetime" />
+          <Property Name="iAssID" Type="bigint" Nullable="false" />
+          <Property Name="iConsCount" Type="int" />
+          <Property Name="iConsSerial" Type="bigint" Nullable="false" />
+          <Property Name="iLink" Type="bigint" />
+          <Property Name="iNO" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="nBalance" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="nConsCharge1" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="nConsCharge2" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="nConsRate" Type="numeric" Precision="5" Scale="2" />
+          <Property Name="nGoodsPrice" Type="numeric" Precision="10" Scale="2" />
+          <Property Name="nLastBalance" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="vcAssCardID" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="vcClass" Type="varchar" MaxLength="10" />
+          <Property Name="vcComments" Type="varchar" MaxLength="100" />
+          <Property Name="vcFlag" Type="varchar" MaxLength="2" />
+          <Property Name="vcGoodsCode" Type="varchar" MaxLength="10" />
+          <Property Name="vcOperID" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“AMS-FB.dbo.tbFillFee”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="tbFillFee">
+          <Key>
+            <PropertyRef Name="iAssID" />
+            <PropertyRef Name="iFillSerial" />
+            <PropertyRef Name="vcAssCardID" />
+          </Key>
+          <Property Name="dtFillDate" Type="datetime" />
+          <Property Name="iAssID" Type="bigint" Nullable="false" />
+          <Property Name="iFillSerial" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="nBalance" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="nFillFee" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="nLastBalance" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="nPromFee" Type="numeric" Precision="10" Scale="2" />
+          <Property Name="vcAssCardID" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="vcComments" Type="varchar" MaxLength="100" />
+          <Property Name="vcOperID" Type="varchar" MaxLength="10" />
+          <Property Name="vcOperType" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“AMS-FB.dbo.tbFillFee_20060730”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="tbFillFee_20060730">
+          <Key>
+            <PropertyRef Name="iAssID" />
+            <PropertyRef Name="iFillSerial" />
+            <PropertyRef Name="vcAssCardID" />
+          </Key>
+          <Property Name="dtFillDate" Type="datetime" />
+          <Property Name="iAssID" Type="bigint" Nullable="false" />
+          <Property Name="iFillSerial" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="nBalance" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="nFillFee" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="nLastBalance" Type="numeric" Precision="12" Scale="2" />
+          <Property Name="nPromFee" Type="numeric" Precision="10" Scale="2" />
+          <Property Name="vcAssCardID" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="vcComments" Type="varchar" MaxLength="100" />
+          <Property Name="vcOperID" Type="varchar" MaxLength="10" />
+          <Property Name="vcOperType" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="tbFillProm">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="iCelling" Type="int" Nullable="false" />
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="iFloor" Type="int" Nullable="false" />
+          <Property Name="iRate" Type="int" Nullable="false" />
+          <Property Name="vcComments" Type="varchar" MaxLength="40" />
+        </EntityType>
+        <EntityType Name="tbGoods">
+          <Key>
+            <PropertyRef Name="vcGoodsCode" />
+          </Key>
+          <Property Name="iRateFloor" Type="int" />
+          <Property Name="nGoodsPrice" Type="numeric" Precision="10" Scale="2" />
+          <Property Name="vcGoodsCode" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="vcGoodsComments" Type="varchar" MaxLength="100" />
+          <Property Name="vcGoodsName" Type="varchar" Nullable="false" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="tbGoodsRate">
+          <Key>
+            <PropertyRef Name="vcAssLevel" />
+            <PropertyRef Name="vcGoodsCode" />
+          </Key>
+          <Property Name="nGoodsRate" Type="int" Nullable="false" />
+          <Property Name="vcAssLevel" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="vcComments" Type="varchar" MaxLength="50" />
+          <Property Name="vcGoodsCode" Type="varchar" Nullable="false" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="tbIgSerialNo">
+          <Key>
+            <PropertyRef Name="iSerialNo" />
+          </Key>
+          <Property Name="iSerialNo" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="vcFill" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“AMS-FB.dbo.tbIntegral”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="tbIntegral">
+          <Key>
+            <PropertyRef Name="iAssID" />
+            <PropertyRef Name="nBalance" />
+            <PropertyRef Name="vcAssCardID" />
+          </Key>
+          <Property Name="iAssID" Type="int" Nullable="false" />
+          <Property Name="iIgValue" Type="int" />
+          <Property Name="nBalance" Type="numeric" Nullable="false" Precision="12" Scale="2" />
+          <Property Name="vcAssCardID" Type="varchar" Nullable="false" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="tbIntegralLog">
+          <Key>
+            <PropertyRef Name="iIgSerial" />
+            <PropertyRef Name="iNo" />
+          </Key>
+          <Property Name="dtIgDate" Type="datetime" />
+          <Property Name="iAssID" Type="bigint" Nullable="false" />
+          <Property Name="iIgArrival" Type="int" />
+          <Property Name="iIgGet" Type="int" />
+          <Property Name="iIgLast" Type="int" />
+          <Property Name="iIgSerial" Type="bigint" Nullable="false" />
+          <Property Name="iLinkCons" Type="bigint" />
+          <Property Name="iNo" Type="bigint" Nullable="false" />
+          <Property Name="vcAssCardID" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="vcComments" Type="varchar" MaxLength="100" />
+          <Property Name="vcIgName" Type="varchar" MaxLength="40" />
+          <Property Name="vcIgType" Type="varchar" MaxLength="5" />
+          <Property Name="vcOperID" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="tbLimit">
+          <Key>
+            <PropertyRef Name="vcLimitCode" />
+          </Key>
+          <Property Name="vcLimitCode" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="vcLimitName" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tbOper">
+          <Key>
+            <PropertyRef Name="vcOperID" />
+          </Key>
+          <Property Name="vcLimit" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="vcOperID" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="vcOperLevel" Type="varchar" MaxLength="5" />
+          <Property Name="vcOperName" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="vcOperPwd" Type="varchar" Nullable="false" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="tbOperLevel">
+          <Key>
+            <PropertyRef Name="vcOperLevel" />
+          </Key>
+          <Property Name="iRateFloor" Type="int" />
+          <Property Name="vcLevelName" Type="varchar" MaxLength="20" />
+          <Property Name="vcOperLevel" Type="varchar" Nullable="false" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="tbOperLimit">
+          <Key>
+            <PropertyRef Name="vcLimitCode" />
+            <PropertyRef Name="vcMenu1" />
+            <PropertyRef Name="vcMenu2" />
+          </Key>
+          <Property Name="vcLimitCode" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="vcMenu1" Type="char" Nullable="false" MaxLength="2" />
+          <Property Name="vcMenu2" Type="char" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <Function Name="dt_addtosourcecontrol" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="vchSourceSafeINI" Type="varchar" Mode="In" />
+          <Parameter Name="vchProjectName" Type="varchar" Mode="In" />
+          <Parameter Name="vchComment" Type="varchar" Mode="In" />
+          <Parameter Name="vchLoginName" Type="varchar" Mode="In" />
+          <Parameter Name="vchPassword" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="dt_addtosourcecontrol_u" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="vchSourceSafeINI" Type="nvarchar" Mode="In" />
+          <Parameter Name="vchProjectName" Type="nvarchar" Mode="In" />
+          <Parameter Name="vchComment" Type="nvarchar" Mode="In" />
+          <Parameter Name="vchLoginName" Type="nvarchar" Mode="In" />
+          <Parameter Name="vchPassword" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="dt_adduserobject" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="dt_adduserobject_vcs" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="vchProperty" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="dt_checkinobject" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="chObjectType" Type="char" Mode="In" />
+          <Parameter Name="vchObjectName" Type="varchar" Mode="In" />
+          <Parameter Name="vchComment" Type="varchar" Mode="In" />
+          <Parameter Name="vchLoginName" Type="varchar" Mode="In" />
+          <Parameter Name="vchPassword" Type="varchar" Mode="In" />
+          <Parameter Name="iVCSFlags" Type="int" Mode="In" />
+          <Parameter Name="iActionFlag" Type="int" Mode="In" />
+          <Parameter Name="txStream1" Type="text" Mode="In" />
+          <Parameter Name="txStream2" Type="text" Mode="In" />
+          <Parameter Name="txStream3" Type="text" Mode="In" />
+        </Function>
+        <Function Name="dt_checkinobject_u" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="chObjectType" Type="char" Mode="In" />
+          <Parameter Name="vchObjectName" Type="nvarchar" Mode="In" />
+          <Parameter Name="vchComment" Type="nvarchar" Mode="In" />
+          <Parameter Name="vchLoginName" Type="nvarchar" Mode="In" />
+          <Parameter Name="vchPassword" Type="nvarchar" Mode="In" />
+          <Parameter Name="iVCSFlags" Type="int" Mode="In" />
+          <Parameter Name="iActionFlag" Type="int" Mode="In" />
+          <Parameter Name="txStream1" Type="text" Mode="In" />
+          <Parameter Name="txStream2" Type="text" Mode="In" />
+          <Parameter Name="txStream3" Type="text" Mode="In" />
+        </Function>
+        <Function Name="dt_checkoutobject" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="chObjectType" Type="char" Mode="In" />
+          <Parameter Name="vchObjectName" Type="varchar" Mode="In" />
+          <Parameter Name="vchComment" Type="varchar" Mode="In" />
+          <Parameter Name="vchLoginName" Type="varchar" Mode="In" />
+          <Parameter Name="vchPassword" Type="varchar" Mode="In" />
+          <Parameter Name="iVCSFlags" Type="int" Mode="In" />
+          <Parameter Name="iActionFlag" Type="int" Mode="In" />
+        </Function>
+        <Function Name="dt_checkoutobject_u" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="chObjectType" Type="char" Mode="In" />
+          <Parameter Name="vchObjectName" Type="nvarchar" Mode="In" />
+          <Parameter Name="vchComment" Type="nvarchar" Mode="In" />
+          <Parameter Name="vchLoginName" Type="nvarchar" Mode="In" />
+          <Parameter Name="vchPassword" Type="nvarchar" Mode="In" />
+          <Parameter Name="iVCSFlags" Type="int" Mode="In" />
+          <Parameter Name="iActionFlag" Type="int" Mode="In" />
+        </Function>
+        <Function Name="dt_displayoaerror" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="iObject" Type="int" Mode="In" />
+          <Parameter Name="iresult" Type="int" Mode="In" />
+        </Function>
+        <Function Name="dt_displayoaerror_u" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="iObject" Type="int" Mode="In" />
+          <Parameter Name="iresult" Type="int" Mode="In" />
+        </Function>
+        <Function Name="dt_droppropertiesbyid" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+          <Parameter Name="property" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="dt_dropuserobjectbyid" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="dt_generateansiname" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="name" Type="varchar" Mode="InOut" />
+        </Function>
+        <Function Name="dt_getobjwithprop" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="property" Type="varchar" Mode="In" />
+          <Parameter Name="value" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="dt_getobjwithprop_u" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="property" Type="varchar" Mode="In" />
+          <Parameter Name="uvalue" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="dt_getpropertiesbyid" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+          <Parameter Name="property" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="dt_getpropertiesbyid_u" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+          <Parameter Name="property" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="dt_getpropertiesbyid_vcs" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+          <Parameter Name="property" Type="varchar" Mode="In" />
+          <Parameter Name="value" Type="varchar" Mode="InOut" />
+        </Function>
+        <Function Name="dt_getpropertiesbyid_vcs_u" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+          <Parameter Name="property" Type="varchar" Mode="In" />
+          <Parameter Name="value" Type="nvarchar" Mode="InOut" />
+        </Function>
+        <Function Name="dt_isundersourcecontrol" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="vchLoginName" Type="varchar" Mode="In" />
+          <Parameter Name="vchPassword" Type="varchar" Mode="In" />
+          <Parameter Name="iWhoToo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="dt_isundersourcecontrol_u" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="vchLoginName" Type="nvarchar" Mode="In" />
+          <Parameter Name="vchPassword" Type="nvarchar" Mode="In" />
+          <Parameter Name="iWhoToo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="dt_removefromsourcecontrol" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="dt_setpropertybyid" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+          <Parameter Name="property" Type="varchar" Mode="In" />
+          <Parameter Name="value" Type="varchar" Mode="In" />
+          <Parameter Name="lvalue" Type="image" Mode="In" />
+        </Function>
+        <Function Name="dt_setpropertybyid_u" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+          <Parameter Name="property" Type="varchar" Mode="In" />
+          <Parameter Name="uvalue" Type="nvarchar" Mode="In" />
+          <Parameter Name="lvalue" Type="image" Mode="In" />
+        </Function>
+        <Function Name="dt_validateloginparams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="vchLoginName" Type="varchar" Mode="In" />
+          <Parameter Name="vchPassword" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="dt_validateloginparams_u" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="vchLoginName" Type="nvarchar" Mode="In" />
+          <Parameter Name="vchPassword" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="dt_vcsenabled" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="dt_verstamp006" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="dt_whocheckedout" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="chObjectType" Type="char" Mode="In" />
+          <Parameter Name="vchObjectName" Type="varchar" Mode="In" />
+          <Parameter Name="vchLoginName" Type="varchar" Mode="In" />
+          <Parameter Name="vchPassword" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="dt_whocheckedout_u" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="chObjectType" Type="char" Mode="In" />
+          <Parameter Name="vchObjectName" Type="nvarchar" Mode="In" />
+          <Parameter Name="vchLoginName" Type="nvarchar" Mode="In" />
+          <Parameter Name="vchPassword" Type="nvarchar" Mode="In" />
+        </Function>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AMSModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+        <EntityContainer Name="AMSEntities">
+          <EntitySet Name="dtproperties" EntityType="AMSModel.dtproperties" />
+          <EntitySet Name="tbAssociator" EntityType="AMSModel.tbAssociator" />
+          <EntitySet Name="tbAssociatorCard" EntityType="AMSModel.tbAssociatorCard" />
+          <EntitySet Name="tbBillInvoice" EntityType="AMSModel.tbBillInvoice" />
+          <EntitySet Name="tbBillList" EntityType="AMSModel.tbBillList" />
+          <EntitySet Name="tbBillSerialNo" EntityType="AMSModel.tbBillSerialNo" />
+          <EntitySet Name="tbBusiFee" EntityType="AMSModel.tbBusiFee" />
+          <EntitySet Name="tbBusiLog" EntityType="AMSModel.tbBusiLog" />
+          <EntitySet Name="tbCommCode" EntityType="AMSModel.tbCommCode" />
+          <EntitySet Name="tbConsserialNo" EntityType="AMSModel.tbConsserialNo" />
+          <EntitySet Name="tbConsumption" EntityType="AMSModel.tbConsumption" />
+          <EntitySet Name="tbConsumption_01" EntityType="AMSModel.tbConsumption_01" />
+          <EntitySet Name="tbConsumption_20060730" EntityType="AMSModel.tbConsumption_20060730" />
+          <EntitySet Name="tbConsumption_tmp" EntityType="AMSModel.tbConsumption_tmp" />
+          <EntitySet Name="tbFillFee" EntityType="AMSModel.tbFillFee" />
+          <EntitySet Name="tbFillFee_20060730" EntityType="AMSModel.tbFillFee_20060730" />
+          <EntitySet Name="tbGoods" EntityType="AMSModel.tbGoods" />
+          <EntitySet Name="tbGoodsRate" EntityType="AMSModel.tbGoodsRate" />
+          <EntitySet Name="tbIgSerialNo" EntityType="AMSModel.tbIgSerialNo" />
+          <EntitySet Name="tbIntegral" EntityType="AMSModel.tbIntegral" />
+          <EntitySet Name="tbIntegralLog" EntityType="AMSModel.tbIntegralLog" />
+          <EntitySet Name="tbLimit" EntityType="AMSModel.tbLimit" />
+          <EntitySet Name="tbOper" EntityType="AMSModel.tbOper" />
+          <EntitySet Name="tbOperLevel" EntityType="AMSModel.tbOperLevel" />
+          <EntitySet Name="tbOperLimit" EntityType="AMSModel.tbOperLimit" />
+          <EntitySet Name="tbFillProm" EntityType="AMSModel.tbFillProm" /></EntityContainer>
+        <EntityType Name="dtproperties">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="property" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="lvalue" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="objectid" Type="Int32" />
+          <Property Name="property" Type="String" Nullable="false" MaxLength="64" Unicode="false" FixedLength="false" />
+          <Property Name="uvalue" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="value" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="version" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbAssociator">
+          <Key>
+            <PropertyRef Name="iAssID" />
+            <PropertyRef Name="vcAssName" />
+          </Key>
+          <Property Name="cAssSex" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="dtInAssDate" Type="DateTime" />
+          <Property Name="dtOperDate" Type="DateTime" />
+          <Property Name="iAssAge" Type="Int32" />
+          <Property Name="iAssID" Type="Int64" Nullable="false" />
+          <Property Name="vcAssLevel" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="vcAssName" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="vcAssNbr" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="vcAssState" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="vcAssType" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="vcComAddress" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="vcComFax" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="vcComments" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="vcCompanyName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="vcComPhone" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="vcComPostID" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcEmail" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="vcLinkAddress" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="vcLinkPhone" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="vcMobile" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="vcOperID" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcPassport" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="vcPostID" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbAssociatorCard">
+          <Key>
+            <PropertyRef Name="iAssID" />
+            <PropertyRef Name="vcAssCardID" />
+          </Key>
+          <Property Name="cCardState" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="dtCardEffDate" Type="DateTime" />
+          <Property Name="dtCardExpDate" Type="DateTime" />
+          <Property Name="dtCardPutDate" Type="DateTime" />
+          <Property Name="iAssID" Type="Int64" Nullable="false" />
+          <Property Name="vcAssCardID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcAssPwd" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+          <Property Name="vcCardLevel" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="vcOperID" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbBillInvoice">
+          <Key>
+            <PropertyRef Name="iBillNo" />
+          </Key>
+          <Property Name="dCharge" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="dIgGet" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="dIgValue" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="dLastCharge" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="dLastIg" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="dMealFee" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="dServiceFee" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="dSumFee" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="dtCreateDate" Type="DateTime" />
+          <Property Name="dTotalFee" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="dtPrintDate" Type="DateTime" />
+          <Property Name="iBillNo" Type="Int64" Nullable="false" />
+          <Property Name="vcAssCardID" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcAssName" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="vcBillType" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="vcEffFlag" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="vcLinkSerial" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcOperName" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcPrintFlag" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="vcReserve" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbBillList">
+          <Key>
+            <PropertyRef Name="iBillNo" />
+            <PropertyRef Name="iNO" />
+          </Key>
+          <Property Name="iBillNo" Type="Int64" Nullable="false" />
+          <Property Name="iCount" Type="Int32" />
+          <Property Name="iNO" Type="Int64" Nullable="false" />
+          <Property Name="nCharge" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="nPrice" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="nRate" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="vcGoodsName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="vcUnit" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbBillSerialNo">
+          <Key>
+            <PropertyRef Name="iSerialNo" />
+          </Key>
+          <Property Name="iSerialNo" Type="Int64" Nullable="false" />
+          <Property Name="vcFill" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbBusiFee">
+          <Key>
+            <PropertyRef Name="iSerial" />
+          </Key>
+          <Property Name="dtOperDate" Type="DateTime" />
+          <Property Name="iAssID" Type="Int64" />
+          <Property Name="iSerial" Type="Int64" Nullable="false" />
+          <Property Name="nFee" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="vcAssCardID" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcComments" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="vcFeeCode" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="vcOperID" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcSvcCode" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbBusiLog">
+          <Key>
+            <PropertyRef Name="iSerial" />
+          </Key>
+          <Property Name="dtOperDate" Type="DateTime" />
+          <Property Name="iSerial" Type="Int64" Nullable="false" />
+          <Property Name="vcAssCardID" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcAssName" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="vcLinkSerial" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="vcOperName" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcOperType" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbCommCode">
+          <Key>
+            <PropertyRef Name="ID" /></Key>
+          <Property Name="vcCommCode" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="vcComments" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="vcCommName" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="vcCommSign" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" DefaultValue="EX" />
+          <Property Name="ID" Type="Int32" Nullable="false" /></EntityType>
+        <EntityType Name="tbConsserialNo">
+          <Key>
+            <PropertyRef Name="iSerialNo" />
+          </Key>
+          <Property Name="iSerialNo" Type="Int64" Nullable="false" />
+          <Property Name="vcFill" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbConsumption">
+          <Key>
+            <PropertyRef Name="iConsSerial" />
+            <PropertyRef Name="iNO" />
+          </Key>
+          <Property Name="dtConsDate" Type="DateTime" />
+          <Property Name="dtOperDate" Type="DateTime" />
+          <Property Name="iAssID" Type="Int64" Nullable="false" />
+          <Property Name="iConsCount" Type="Int32" />
+          <Property Name="iConsSerial" Type="Int64" Nullable="false" />
+          <Property Name="iLink" Type="Int64" />
+          <Property Name="iNO" Type="Int64" Nullable="false" />
+          <Property Name="nBalance" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="nConsCharge1" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="nConsCharge2" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="nConsRate" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="nGoodsPrice" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="nLastBalance" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="vcAssCardID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcClass" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcComments" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="vcFlag" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+          <Property Name="vcGoodsCode" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="vcOperID" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbConsumption_01">
+          <Key>
+            <PropertyRef Name="iAssID" />
+            <PropertyRef Name="iConsSerial" />
+            <PropertyRef Name="vcAssCardID" />
+          </Key>
+          <Property Name="dtConsDate" Type="DateTime" />
+          <Property Name="iAssID" Type="Int64" Nullable="false" />
+          <Property Name="iConsCount" Type="Int32" />
+          <Property Name="iConsSerial" Type="Int64" Nullable="false" />
+          <Property Name="nBalance" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="nConsCharge1" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="nConsCharge2" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="nConsRate" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="nGoodsPrice" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="nLastBalance" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="vcAssCardID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcClass" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcComments" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="vcGoodsCode" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcOperID" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbConsumption_20060730">
+          <Key>
+            <PropertyRef Name="iAssID" />
+            <PropertyRef Name="iConsSerial" />
+            <PropertyRef Name="vcAssCardID" />
+          </Key>
+          <Property Name="dtConsDate" Type="DateTime" />
+          <Property Name="iAssID" Type="Int64" Nullable="false" />
+          <Property Name="iConsCount" Type="Int32" />
+          <Property Name="iConsSerial" Type="Int64" Nullable="false" />
+          <Property Name="nBalance" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="nConsCharge1" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="nConsCharge2" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="nConsRate" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="nGoodsPrice" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="nLastBalance" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="vcAssCardID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcClass" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcComments" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="vcGoodsCode" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcOperID" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbConsumption_tmp">
+          <Key>
+            <PropertyRef Name="iAssID" />
+            <PropertyRef Name="iConsSerial" />
+            <PropertyRef Name="iNO" />
+            <PropertyRef Name="vcAssCardID" />
+          </Key>
+          <Property Name="dtConsDate" Type="DateTime" />
+          <Property Name="dtOperDate" Type="DateTime" />
+          <Property Name="iAssID" Type="Int64" Nullable="false" />
+          <Property Name="iConsCount" Type="Int32" />
+          <Property Name="iConsSerial" Type="Int64" Nullable="false" />
+          <Property Name="iLink" Type="Int64" />
+          <Property Name="iNO" Type="Int64" Nullable="false" />
+          <Property Name="nBalance" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="nConsCharge1" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="nConsCharge2" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="nConsRate" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="nGoodsPrice" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="nLastBalance" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="vcAssCardID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcClass" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcComments" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="vcFlag" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+          <Property Name="vcGoodsCode" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcOperID" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbFillFee">
+          <Key>
+            <PropertyRef Name="iAssID" />
+            <PropertyRef Name="iFillSerial" />
+            <PropertyRef Name="vcAssCardID" />
+          </Key>
+          <Property Name="dtFillDate" Type="DateTime" />
+          <Property Name="iAssID" Type="Int64" Nullable="false" />
+          <Property Name="iFillSerial" Type="Int64" Nullable="false" />
+          <Property Name="nBalance" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="nFillFee" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="nLastBalance" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="nPromFee" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="vcAssCardID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcComments" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="vcOperID" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcOperType" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbFillFee_20060730">
+          <Key>
+            <PropertyRef Name="iAssID" />
+            <PropertyRef Name="iFillSerial" />
+            <PropertyRef Name="vcAssCardID" />
+          </Key>
+          <Property Name="dtFillDate" Type="DateTime" />
+          <Property Name="iAssID" Type="Int64" Nullable="false" />
+          <Property Name="iFillSerial" Type="Int64" Nullable="false" />
+          <Property Name="nBalance" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="nFillFee" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="nLastBalance" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="nPromFee" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="vcAssCardID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcComments" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="vcOperID" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcOperType" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbGoods">
+          <Key>
+            <PropertyRef Name="vcGoodsCode" />
+          </Key>
+          <Property Name="iRateFloor" Type="Int32" />
+          <Property Name="nGoodsPrice" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="vcGoodsCode" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcGoodsComments" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="vcGoodsName" Type="String" MaxLength="30" Unicode="false" FixedLength="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbGoodsRate">
+          <Key>
+            <PropertyRef Name="vcAssLevel" />
+            <PropertyRef Name="vcGoodsCode" />
+          </Key>
+          <Property Name="nGoodsRate" Type="Int32" Nullable="false" />
+          <Property Name="vcAssLevel" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="vcGoodsCode" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcComments" Type="String" Nullable="true" /></EntityType>
+        <EntityType Name="tbIgSerialNo">
+          <Key>
+            <PropertyRef Name="iSerialNo" />
+          </Key>
+          <Property Name="iSerialNo" Type="Int64" Nullable="false" />
+          <Property Name="vcFill" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbIntegral">
+          <Key>
+            <PropertyRef Name="iAssID" />
+            <PropertyRef Name="nBalance" />
+            <PropertyRef Name="vcAssCardID" />
+          </Key>
+          <Property Name="iAssID" Type="Int32" Nullable="false" />
+          <Property Name="iIgValue" Type="Int32" />
+          <Property Name="nBalance" Type="Decimal" Nullable="false" Precision="12" Scale="2" />
+          <Property Name="vcAssCardID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbIntegralLog">
+          <Key>
+            <PropertyRef Name="iIgSerial" />
+            <PropertyRef Name="iNo" />
+          </Key>
+          <Property Name="dtIgDate" Type="DateTime" />
+          <Property Name="iAssID" Type="Int64" Nullable="false" />
+          <Property Name="iIgArrival" Type="Int32" />
+          <Property Name="iIgGet" Type="Int32" />
+          <Property Name="iIgLast" Type="Int32" />
+          <Property Name="iIgSerial" Type="Int64" Nullable="false" />
+          <Property Name="iLinkCons" Type="Int64" />
+          <Property Name="iNo" Type="Int64" Nullable="false" />
+          <Property Name="vcAssCardID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcComments" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="vcIgName" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="vcIgType" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="vcOperID" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbLimit">
+          <Key>
+            <PropertyRef Name="vcLimitCode" />
+          </Key>
+          <Property Name="vcLimitCode" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcLimitName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbOper">
+          <Key>
+            <PropertyRef Name="vcOperID" />
+          </Key>
+          <Property Name="vcLimit" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcOperID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcOperLevel" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="vcOperName" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcOperPwd" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbOperLevel">
+          <Key>
+            <PropertyRef Name="vcOperLevel" />
+          </Key>
+          <Property Name="iRateFloor" Type="Int32" />
+          <Property Name="vcLevelName" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="vcOperLevel" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbOperLimit">
+          <Key>
+            <PropertyRef Name="vcLimitCode" />
+            <PropertyRef Name="vcMenu1" />
+            <PropertyRef Name="vcMenu2" />
+          </Key>
+          <Property Name="vcLimitCode" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="vcMenu1" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="vcMenu2" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="true" />
+        </EntityType>
+        <EntityType Name="tbFillProm">
+          <Key>
+            <PropertyRef Name="ID" /></Key>
+          <Property Name="iCelling" Type="Int32" Nullable="false" />
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="iFloor" Type="Int32" Nullable="false" />
+          <Property Name="iRate" Type="Int32" Nullable="false" />
+          <Property Name="vcComments" Type="String" Nullable="true" /></EntityType></Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+        <EntityContainerMapping StorageEntityContainer="AMSModelStoreContainer" CdmEntityContainer="AMSEntities">
+          <EntitySetMapping Name="dtproperties">
+            <EntityTypeMapping TypeName="IsTypeOf(AMSModel.dtproperties)">
+              <MappingFragment StoreEntitySet="dtproperties">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="lvalue" ColumnName="lvalue" />
+                <ScalarProperty Name="objectid" ColumnName="objectid" />
+                <ScalarProperty Name="property" ColumnName="property" />
+                <ScalarProperty Name="uvalue" ColumnName="uvalue" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="version" ColumnName="version" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbAssociator">
+            <EntityTypeMapping TypeName="IsTypeOf(AMSModel.tbAssociator)">
+              <MappingFragment StoreEntitySet="tbAssociator">
+                <ScalarProperty Name="cAssSex" ColumnName="cAssSex" />
+                <ScalarProperty Name="dtInAssDate" ColumnName="dtInAssDate" />
+                <ScalarProperty Name="dtOperDate" ColumnName="dtOperDate" />
+                <ScalarProperty Name="iAssAge" ColumnName="iAssAge" />
+                <ScalarProperty Name="iAssID" ColumnName="iAssID" />
+                <ScalarProperty Name="vcAssLevel" ColumnName="vcAssLevel" />
+                <ScalarProperty Name="vcAssName" ColumnName="vcAssName" />
+                <ScalarProperty Name="vcAssNbr" ColumnName="vcAssNbr" />
+                <ScalarProperty Name="vcAssState" ColumnName="vcAssState" />
+                <ScalarProperty Name="vcAssType" ColumnName="vcAssType" />
+                <ScalarProperty Name="vcComAddress" ColumnName="vcComAddress" />
+                <ScalarProperty Name="vcComFax" ColumnName="vcComFax" />
+                <ScalarProperty Name="vcComments" ColumnName="vcComments" />
+                <ScalarProperty Name="vcCompanyName" ColumnName="vcCompanyName" />
+                <ScalarProperty Name="vcComPhone" ColumnName="vcComPhone" />
+                <ScalarProperty Name="vcComPostID" ColumnName="vcComPostID" />
+                <ScalarProperty Name="vcEmail" ColumnName="vcEmail" />
+                <ScalarProperty Name="vcLinkAddress" ColumnName="vcLinkAddress" />
+                <ScalarProperty Name="vcLinkPhone" ColumnName="vcLinkPhone" />
+                <ScalarProperty Name="vcMobile" ColumnName="vcMobile" />
+                <ScalarProperty Name="vcOperID" ColumnName="vcOperID" />
+                <ScalarProperty Name="vcPassport" ColumnName="vcPassport" />
+                <ScalarProperty Name="vcPostID" ColumnName="vcPostID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbAssociatorCard">
+            <EntityTypeMapping TypeName="IsTypeOf(AMSModel.tbAssociatorCard)">
+              <MappingFragment StoreEntitySet="tbAssociatorCard">
+                <ScalarProperty Name="cCardState" ColumnName="cCardState" />
+                <ScalarProperty Name="dtCardEffDate" ColumnName="dtCardEffDate" />
+                <ScalarProperty Name="dtCardExpDate" ColumnName="dtCardExpDate" />
+                <ScalarProperty Name="dtCardPutDate" ColumnName="dtCardPutDate" />
+                <ScalarProperty Name="iAssID" ColumnName="iAssID" />
+                <ScalarProperty Name="vcAssCardID" ColumnName="vcAssCardID" />
+                <ScalarProperty Name="vcAssPwd" ColumnName="vcAssPwd" />
+                <ScalarProperty Name="vcCardLevel" ColumnName="vcCardLevel" />
+                <ScalarProperty Name="vcOperID" ColumnName="vcOperID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbBillInvoice">
+            <EntityTypeMapping TypeName="IsTypeOf(AMSModel.tbBillInvoice)">
+              <MappingFragment StoreEntitySet="tbBillInvoice">
+                <ScalarProperty Name="dCharge" ColumnName="dCharge" />
+                <ScalarProperty Name="dIgGet" ColumnName="dIgGet" />
+                <ScalarProperty Name="dIgValue" ColumnName="dIgValue" />
+                <ScalarProperty Name="dLastCharge" ColumnName="dLastCharge" />
+                <ScalarProperty Name="dLastIg" ColumnName="dLastIg" />
+                <ScalarProperty Name="dMealFee" ColumnName="dMealFee" />
+                <ScalarProperty Name="dServiceFee" ColumnName="dServiceFee" />
+                <ScalarProperty Name="dSumFee" ColumnName="dSumFee" />
+                <ScalarProperty Name="dtCreateDate" ColumnName="dtCreateDate" />
+                <ScalarProperty Name="dTotalFee" ColumnName="dTotalFee" />
+                <ScalarProperty Name="dtPrintDate" ColumnName="dtPrintDate" />
+                <ScalarProperty Name="iBillNo" ColumnName="iBillNo" />
+                <ScalarProperty Name="vcAssCardID" ColumnName="vcAssCardID" />
+                <ScalarProperty Name="vcAssName" ColumnName="vcAssName" />
+                <ScalarProperty Name="vcBillType" ColumnName="vcBillType" />
+                <ScalarProperty Name="vcEffFlag" ColumnName="vcEffFlag" />
+                <ScalarProperty Name="vcLinkSerial" ColumnName="vcLinkSerial" />
+                <ScalarProperty Name="vcOperName" ColumnName="vcOperName" />
+                <ScalarProperty Name="vcPrintFlag" ColumnName="vcPrintFlag" />
+                <ScalarProperty Name="vcReserve" ColumnName="vcReserve" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbBillList">
+            <EntityTypeMapping TypeName="IsTypeOf(AMSModel.tbBillList)">
+              <MappingFragment StoreEntitySet="tbBillList">
+                <ScalarProperty Name="iBillNo" ColumnName="iBillNo" />
+                <ScalarProperty Name="iCount" ColumnName="iCount" />
+                <ScalarProperty Name="iNO" ColumnName="iNO" />
+                <ScalarProperty Name="nCharge" ColumnName="nCharge" />
+                <ScalarProperty Name="nPrice" ColumnName="nPrice" />
+                <ScalarProperty Name="nRate" ColumnName="nRate" />
+                <ScalarProperty Name="vcGoodsName" ColumnName="vcGoodsName" />
+                <ScalarProperty Name="vcUnit" ColumnName="vcUnit" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbBillSerialNo">
+            <EntityTypeMapping TypeName="IsTypeOf(AMSModel.tbBillSerialNo)">
+              <MappingFragment StoreEntitySet="tbBillSerialNo">
+                <ScalarProperty Name="iSerialNo" ColumnName="iSerialNo" />
+                <ScalarProperty Name="vcFill" ColumnName="vcFill" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbBusiFee">
+            <EntityTypeMapping TypeName="IsTypeOf(AMSModel.tbBusiFee)">
+              <MappingFragment StoreEntitySet="tbBusiFee">
+                <ScalarProperty Name="dtOperDate" ColumnName="dtOperDate" />
+                <ScalarProperty Name="iAssID" ColumnName="iAssID" />
+                <ScalarProperty Name="iSerial" ColumnName="iSerial" />
+                <ScalarProperty Name="nFee" ColumnName="nFee" />
+                <ScalarProperty Name="vcAssCardID" ColumnName="vcAssCardID" />
+                <ScalarProperty Name="vcComments" ColumnName="vcComments" />
+                <ScalarProperty Name="vcFeeCode" ColumnName="vcFeeCode" />
+                <ScalarProperty Name="vcOperID" ColumnName="vcOperID" />
+                <ScalarProperty Name="vcSvcCode" ColumnName="vcSvcCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbBusiLog">
+            <EntityTypeMapping TypeName="IsTypeOf(AMSModel.tbBusiLog)">
+              <MappingFragment StoreEntitySet="tbBusiLog">
+                <ScalarProperty Name="dtOperDate" ColumnName="dtOperDate" />
+                <ScalarProperty Name="iSerial" ColumnName="iSerial" />
+                <ScalarProperty Name="vcAssCardID" ColumnName="vcAssCardID" />
+                <ScalarProperty Name="vcAssName" ColumnName="vcAssName" />
+                <ScalarProperty Name="vcLinkSerial" ColumnName="vcLinkSerial" />
+                <ScalarProperty Name="vcOperName" ColumnName="vcOperName" />
+                <ScalarProperty Name="vcOperType" ColumnName="vcOperType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbCommCode">
+            <EntityTypeMapping TypeName="IsTypeOf(AMSModel.tbCommCode)">
+              <MappingFragment StoreEntitySet="tbCommCode">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="vcCommCode" ColumnName="vcCommCode" />
+                <ScalarProperty Name="vcComments" ColumnName="vcComments" />
+                <ScalarProperty Name="vcCommName" ColumnName="vcCommName" />
+                <ScalarProperty Name="vcCommSign" ColumnName="vcCommSign" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbConsserialNo">
+            <EntityTypeMapping TypeName="IsTypeOf(AMSModel.tbConsserialNo)">
+              <MappingFragment StoreEntitySet="tbConsserialNo">
+                <ScalarProperty Name="iSerialNo" ColumnName="iSerialNo" />
+                <ScalarProperty Name="vcFill" ColumnName="vcFill" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbConsumption">
+            <EntityTypeMapping TypeName="IsTypeOf(AMSModel.tbConsumption)">
+              <MappingFragment StoreEntitySet="tbConsumption">
+                <ScalarProperty Name="dtConsDate" ColumnName="dtConsDate" />
+                <ScalarProperty Name="dtOperDate" ColumnName="dtOperDate" />
+                <ScalarProperty Name="iAssID" ColumnName="iAssID" />
+                <ScalarProperty Name="iConsCount" ColumnName="iConsCount" />
+                <ScalarProperty Name="iConsSerial" ColumnName="iConsSerial" />
+                <ScalarProperty Name="iLink" ColumnName="iLink" />
+                <ScalarProperty Name="iNO" ColumnName="iNO" />
+                <ScalarProperty Name="nBalance" ColumnName="nBalance" />
+                <ScalarProperty Name="nConsCharge1" ColumnName="nConsCharge1" />
+                <ScalarProperty Name="nConsCharge2" ColumnName="nConsCharge2" />
+                <ScalarProperty Name="nConsRate" ColumnName="nConsRate" />
+                <ScalarProperty Name="nGoodsPrice" ColumnName="nGoodsPrice" />
+                <ScalarProperty Name="nLastBalance" ColumnName="nLastBalance" />
+                <ScalarProperty Name="vcAssCardID" ColumnName="vcAssCardID" />
+                <ScalarProperty Name="vcClass" ColumnName="vcClass" />
+                <ScalarProperty Name="vcComments" ColumnName="vcComments" />
+                <ScalarProperty Name="vcFlag" ColumnName="vcFlag" />
+                <ScalarProperty Name="vcGoodsCode" ColumnName="vcGoodsCode" />
+                <ScalarProperty Name="vcOperID" ColumnName="vcOperID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbConsumption_01">
+            <EntityTypeMapping TypeName="IsTypeOf(AMSModel.tbConsumption_01)">
+              <MappingFragment StoreEntitySet="tbConsumption_01">
+                <ScalarProperty Name="dtConsDate" ColumnName="dtConsDate" />
+                <ScalarProperty Name="iAssID" ColumnName="iAssID" />
+                <ScalarProperty Name="iConsCount" ColumnName="iConsCount" />
+                <ScalarProperty Name="iConsSerial" ColumnName="iConsSerial" />
+                <ScalarProperty Name="nBalance" ColumnName="nBalance" />
+                <ScalarProperty Name="nConsCharge1" ColumnName="nConsCharge1" />
+                <ScalarProperty Name="nConsCharge2" ColumnName="nConsCharge2" />
+                <ScalarProperty Name="nConsRate" ColumnName="nConsRate" />
+                <ScalarProperty Name="nGoodsPrice" ColumnName="nGoodsPrice" />
+                <ScalarProperty Name="nLastBalance" ColumnName="nLastBalance" />
+                <ScalarProperty Name="vcAssCardID" ColumnName="vcAssCardID" />
+                <ScalarProperty Name="vcClass" ColumnName="vcClass" />
+                <ScalarProperty Name="vcComments" ColumnName="vcComments" />
+                <ScalarProperty Name="vcGoodsCode" ColumnName="vcGoodsCode" />
+                <ScalarProperty Name="vcOperID" ColumnName="vcOperID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbConsumption_20060730">
+            <EntityTypeMapping TypeName="IsTypeOf(AMSModel.tbConsumption_20060730)">
+              <MappingFragment StoreEntitySet="tbConsumption_20060730">
+                <ScalarProperty Name="dtConsDate" ColumnName="dtConsDate" />
+                <ScalarProperty Name="iAssID" ColumnName="iAssID" />
+                <ScalarProperty Name="iConsCount" ColumnName="iConsCount" />
+                <ScalarProperty Name="iConsSerial" ColumnName="iConsSerial" />
+                <ScalarProperty Name="nBalance" ColumnName="nBalance" />
+                <ScalarProperty Name="nConsCharge1" ColumnName="nConsCharge1" />
+                <ScalarProperty Name="nConsCharge2" ColumnName="nConsCharge2" />
+                <ScalarProperty Name="nConsRate" ColumnName="nConsRate" />
+                <ScalarProperty Name="nGoodsPrice" ColumnName="nGoodsPrice" />
+                <ScalarProperty Name="nLastBalance" ColumnName="nLastBalance" />
+                <ScalarProperty Name="vcAssCardID" ColumnName="vcAssCardID" />
+                <ScalarProperty Name="vcClass" ColumnName="vcClass" />
+                <ScalarProperty Name="vcComments" ColumnName="vcComments" />
+                <ScalarProperty Name="vcGoodsCode" ColumnName="vcGoodsCode" />
+                <ScalarProperty Name="vcOperID" ColumnName="vcOperID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbConsumption_tmp">
+            <EntityTypeMapping TypeName="IsTypeOf(AMSModel.tbConsumption_tmp)">
+              <MappingFragment StoreEntitySet="tbConsumption_tmp">
+                <ScalarProperty Name="dtConsDate" ColumnName="dtConsDate" />
+                <ScalarProperty Name="dtOperDate" ColumnName="dtOperDate" />
+                <ScalarProperty Name="iAssID" ColumnName="iAssID" />
+                <ScalarProperty Name="iConsCount" ColumnName="iConsCount" />
+                <ScalarProperty Name="iConsSerial" ColumnName="iConsSerial" />
+                <ScalarProperty Name="iLink" ColumnName="iLink" />
+                <ScalarProperty Name="iNO" ColumnName="iNO" />
+                <ScalarProperty Name="nBalance" ColumnName="nBalance" />
+                <ScalarProperty Name="nConsCharge1" ColumnName="nConsCharge1" />
+                <ScalarProperty Name="nConsCharge2" ColumnName="nConsCharge2" />
+                <ScalarProperty Name="nConsRate" ColumnName="nConsRate" />
+                <ScalarProperty Name="nGoodsPrice" ColumnName="nGoodsPrice" />
+                <ScalarProperty Name="nLastBalance" ColumnName="nLastBalance" />
+                <ScalarProperty Name="vcAssCardID" ColumnName="vcAssCardID" />
+                <ScalarProperty Name="vcClass" ColumnName="vcClass" />
+                <ScalarProperty Name="vcComments" ColumnName="vcComments" />
+                <ScalarProperty Name="vcFlag" ColumnName="vcFlag" />
+                <ScalarProperty Name="vcGoodsCode" ColumnName="vcGoodsCode" />
+                <ScalarProperty Name="vcOperID" ColumnName="vcOperID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbFillFee">
+            <EntityTypeMapping TypeName="IsTypeOf(AMSModel.tbFillFee)">
+              <MappingFragment StoreEntitySet="tbFillFee">
+                <ScalarProperty Name="dtFillDate" ColumnName="dtFillDate" />
+                <ScalarProperty Name="iAssID" ColumnName="iAssID" />
+                <ScalarProperty Name="iFillSerial" ColumnName="iFillSerial" />
+                <ScalarProperty Name="nBalance" ColumnName="nBalance" />
+                <ScalarProperty Name="nFillFee" ColumnName="nFillFee" />
+                <ScalarProperty Name="nLastBalance" ColumnName="nLastBalance" />
+                <ScalarProperty Name="nPromFee" ColumnName="nPromFee" />
+                <ScalarProperty Name="vcAssCardID" ColumnName="vcAssCardID" />
+                <ScalarProperty Name="vcComments" ColumnName="vcComments" />
+                <ScalarProperty Name="vcOperID" ColumnName="vcOperID" />
+                <ScalarProperty Name="vcOperType" ColumnName="vcOperType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbFillFee_20060730">
+            <EntityTypeMapping TypeName="IsTypeOf(AMSModel.tbFillFee_20060730)">
+              <MappingFragment StoreEntitySet="tbFillFee_20060730">
+                <ScalarProperty Name="dtFillDate" ColumnName="dtFillDate" />
+                <ScalarProperty Name="iAssID" ColumnName="iAssID" />
+                <ScalarProperty Name="iFillSerial" ColumnName="iFillSerial" />
+                <ScalarProperty Name="nBalance" ColumnName="nBalance" />
+                <ScalarProperty Name="nFillFee" ColumnName="nFillFee" />
+                <ScalarProperty Name="nLastBalance" ColumnName="nLastBalance" />
+                <ScalarProperty Name="nPromFee" ColumnName="nPromFee" />
+                <ScalarProperty Name="vcAssCardID" ColumnName="vcAssCardID" />
+                <ScalarProperty Name="vcComments" ColumnName="vcComments" />
+                <ScalarProperty Name="vcOperID" ColumnName="vcOperID" />
+                <ScalarProperty Name="vcOperType" ColumnName="vcOperType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbGoods">
+            <EntityTypeMapping TypeName="IsTypeOf(AMSModel.tbGoods)">
+              <MappingFragment StoreEntitySet="tbGoods">
+                <ScalarProperty Name="iRateFloor" ColumnName="iRateFloor" />
+                <ScalarProperty Name="nGoodsPrice" ColumnName="nGoodsPrice" />
+                <ScalarProperty Name="vcGoodsCode" ColumnName="vcGoodsCode" />
+                <ScalarProperty Name="vcGoodsComments" ColumnName="vcGoodsComments" />
+                <ScalarProperty Name="vcGoodsName" ColumnName="vcGoodsName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbGoodsRate">
+            <EntityTypeMapping TypeName="IsTypeOf(AMSModel.tbGoodsRate)">
+              <MappingFragment StoreEntitySet="tbGoodsRate">
+                <ScalarProperty Name="vcComments" ColumnName="vcComments" />
+                <ScalarProperty Name="nGoodsRate" ColumnName="nGoodsRate" />
+                <ScalarProperty Name="vcAssLevel" ColumnName="vcAssLevel" />
+                <ScalarProperty Name="vcGoodsCode" ColumnName="vcGoodsCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbIgSerialNo">
+            <EntityTypeMapping TypeName="IsTypeOf(AMSModel.tbIgSerialNo)">
+              <MappingFragment StoreEntitySet="tbIgSerialNo">
+                <ScalarProperty Name="iSerialNo" ColumnName="iSerialNo" />
+                <ScalarProperty Name="vcFill" ColumnName="vcFill" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbIntegral">
+            <EntityTypeMapping TypeName="IsTypeOf(AMSModel.tbIntegral)">
+              <MappingFragment StoreEntitySet="tbIntegral">
+                <ScalarProperty Name="iAssID" ColumnName="iAssID" />
+                <ScalarProperty Name="iIgValue" ColumnName="iIgValue" />
+                <ScalarProperty Name="nBalance" ColumnName="nBalance" />
+                <ScalarProperty Name="vcAssCardID" ColumnName="vcAssCardID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbIntegralLog">
+            <EntityTypeMapping TypeName="IsTypeOf(AMSModel.tbIntegralLog)">
+              <MappingFragment StoreEntitySet="tbIntegralLog">
+                <ScalarProperty Name="dtIgDate" ColumnName="dtIgDate" />
+                <ScalarProperty Name="iAssID" ColumnName="iAssID" />
+                <ScalarProperty Name="iIgArrival" ColumnName="iIgArrival" />
+                <ScalarProperty Name="iIgGet" ColumnName="iIgGet" />
+                <ScalarProperty Name="iIgLast" ColumnName="iIgLast" />
+                <ScalarProperty Name="iIgSerial" ColumnName="iIgSerial" />
+                <ScalarProperty Name="iLinkCons" ColumnName="iLinkCons" />
+                <ScalarProperty Name="iNo" ColumnName="iNo" />
+                <ScalarProperty Name="vcAssCardID" ColumnName="vcAssCardID" />
+                <ScalarProperty Name="vcComments" ColumnName="vcComments" />
+                <ScalarProperty Name="vcIgName" ColumnName="vcIgName" />
+                <ScalarProperty Name="vcIgType" ColumnName="vcIgType" />
+                <ScalarProperty Name="vcOperID" ColumnName="vcOperID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbLimit">
+            <EntityTypeMapping TypeName="IsTypeOf(AMSModel.tbLimit)">
+              <MappingFragment StoreEntitySet="tbLimit">
+                <ScalarProperty Name="vcLimitCode" ColumnName="vcLimitCode" />
+                <ScalarProperty Name="vcLimitName" ColumnName="vcLimitName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbOper">
+            <EntityTypeMapping TypeName="IsTypeOf(AMSModel.tbOper)">
+              <MappingFragment StoreEntitySet="tbOper">
+                <ScalarProperty Name="vcLimit" ColumnName="vcLimit" />
+                <ScalarProperty Name="vcOperID" ColumnName="vcOperID" />
+                <ScalarProperty Name="vcOperLevel" ColumnName="vcOperLevel" />
+                <ScalarProperty Name="vcOperName" ColumnName="vcOperName" />
+                <ScalarProperty Name="vcOperPwd" ColumnName="vcOperPwd" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbOperLevel">
+            <EntityTypeMapping TypeName="IsTypeOf(AMSModel.tbOperLevel)">
+              <MappingFragment StoreEntitySet="tbOperLevel">
+                <ScalarProperty Name="iRateFloor" ColumnName="iRateFloor" />
+                <ScalarProperty Name="vcLevelName" ColumnName="vcLevelName" />
+                <ScalarProperty Name="vcOperLevel" ColumnName="vcOperLevel" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbOperLimit">
+            <EntityTypeMapping TypeName="IsTypeOf(AMSModel.tbOperLimit)">
+              <MappingFragment StoreEntitySet="tbOperLimit">
+                <ScalarProperty Name="vcLimitCode" ColumnName="vcLimitCode" />
+                <ScalarProperty Name="vcMenu1" ColumnName="vcMenu1" />
+                <ScalarProperty Name="vcMenu2" ColumnName="vcMenu2" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbFillProm">
+            <EntityTypeMapping TypeName="IsTypeOf(AMSModel.tbFillProm)">
+              <MappingFragment StoreEntitySet="tbFillProm">
+                <ScalarProperty Name="vcComments" ColumnName="vcComments" />
+                <ScalarProperty Name="iRate" ColumnName="iRate" />
+                <ScalarProperty Name="iFloor" ColumnName="iFloor" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="iCelling" ColumnName="iCelling" /></MappingFragment></EntityTypeMapping></EntitySetMapping></EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram Name="AMS-FB" ZoomLevel="100">
+        <EntityTypeShape EntityType="AMSModel.dtproperties" Width="1.5" PointX="0.75" PointY="0.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="AMSModel.tbAssociator" Width="1.5" PointX="2.75" PointY="0.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="AMSModel.tbAssociatorCard" Width="1.5" PointX="4.75" PointY="0.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="AMSModel.tbBillInvoice" Width="1.5" PointX="4.75" PointY="4.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="AMSModel.tbBillList" Width="1.5" PointX="6.75" PointY="0.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="AMSModel.tbBillSerialNo" Width="1.5" PointX="0.75" PointY="6.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="AMSModel.tbBusiFee" Width="1.5" PointX="6.75" PointY="4.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="AMSModel.tbBusiLog" Width="1.5" PointX="8.75" PointY="0.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="AMSModel.tbCommCode" Width="1.5" PointX="8.75" PointY="3.75" Height="1.6222135416666665" IsExpanded="true" />
+        <EntityTypeShape EntityType="AMSModel.tbConsserialNo" Width="1.5" PointX="8.75" PointY="6.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="AMSModel.tbConsumption" Width="1.5" PointX="0.75" PointY="9.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="AMSModel.tbConsumption_01" Width="1.5" PointX="6.75" PointY="9.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="AMSModel.tbConsumption_20060730" Width="1.5" PointX="8.75" PointY="9.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="AMSModel.tbConsumption_tmp" Width="1.5" PointX="10.75" PointY="0.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="AMSModel.tbFillFee" Width="1.5" PointX="2.75" PointY="10.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="AMSModel.tbFillFee_20060730" Width="1.5" PointX="10.75" PointY="5.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="AMSModel.tbGoods" Width="1.5" PointX="10.75" PointY="9.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="AMSModel.tbGoodsRate" Width="1.5" PointX="12.75" PointY="0.75" Height="1.779012858072917" IsExpanded="true" />
+        <EntityTypeShape EntityType="AMSModel.tbIgSerialNo" Width="1.5" PointX="12.75" PointY="3.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="AMSModel.tbIntegral" Width="1.5" PointX="12.75" PointY="6.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="AMSModel.tbIntegralLog" Width="1.5" PointX="12.75" PointY="9.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="AMSModel.tbLimit" Width="1.5" PointX="10.75" PointY="13.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="AMSModel.tbOper" Width="1.5" PointX="12.75" PointY="13.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="AMSModel.tbOperLevel" Width="1.5" PointX="14.75" PointY="0.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="AMSModel.tbOperLimit" Width="1.5" PointX="0.75" PointY="14.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="AMSModel.tbFillProm" Width="1.5" PointX="3.375" PointY="14.75" Height="0.4" IsExpanded="false" /></Diagram></edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

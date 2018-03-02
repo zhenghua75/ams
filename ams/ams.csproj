@@ -1,0 +1,614 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4984BFA1-21F9-4F8F-98FD-5F64981BA3DB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ams</RootNamespace>
+    <AssemblyName>ams</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>true</GenerateManifests>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <SignManifests>true</SignManifests>
+    <ManifestCertificateThumbprint>9F9F063583DEBDA01E712CE16E95F658E3610125</ManifestCertificateThumbprint>
+    <ManifestKeyFile>ams_TemporaryKey.pfx</ManifestKeyFile>
+    <ApplicationIcon>Resources\clients_48.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>http://localhost/ams/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActiveReports.Chart, Version=5.2.1132.2, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="ActiveReports.Design3, Version=5.2.1132.2, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="ActiveReports.HtmlExport, Version=5.2.1132.2, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="ActiveReports.PdfExport, Version=5.2.1132.2, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="ActiveReports.RtfExport, Version=5.2.1132.2, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="ActiveReports.TextExport, Version=5.2.1132.2, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="ActiveReports.TiffExport, Version=5.2.1132.2, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="ActiveReports.Viewer3, Version=5.2.1132.2, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="ActiveReports.XlsExport, Version=5.2.1132.2, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="ActiveReports3, Version=5.2.1132.2, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="Interop.Card, Version=12.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>CardDLL\Interop.Card.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="amswinsetup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="amswinsetup.Designer.cs">
+      <DependentUpon>amswinsetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AMS_FB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AMS_FB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Associator\frmAddCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Associator\frmAddCard.Designer.cs">
+      <DependentUpon>frmAddCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Associator\frmAss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Associator\frmAss.Designer.cs">
+      <DependentUpon>frmAss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Associator\frmAssociator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Associator\frmAssociator.Designer.cs">
+      <DependentUpon>frmAssociator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Associator\frmAssociatorCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Associator\frmAssociatorCard.Designer.cs">
+      <DependentUpon>frmAssociatorCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Associator\frmCardAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Associator\frmCardAdd.Designer.cs">
+      <DependentUpon>frmCardAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Associator\frmCardCallback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Associator\frmCardCallback.Designer.cs">
+      <DependentUpon>frmCardCallback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Associator\frmCardFillFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Associator\frmCardFillFee.Designer.cs">
+      <DependentUpon>frmCardFillFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Associator\frmCardFree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Associator\frmCardFree.Designer.cs">
+      <DependentUpon>frmCardFree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Associator\frmCardLose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Associator\frmCardLose.Designer.cs">
+      <DependentUpon>frmCardLose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Associator\frmCardReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Associator\frmCardReturn.Designer.cs">
+      <DependentUpon>frmCardReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Associator\frmModifyCardPwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Associator\frmModifyCardPwd.Designer.cs">
+      <DependentUpon>frmModifyCardPwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Associator\frmInitCardPwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Associator\frmInitCardPwd.Designer.cs">
+      <DependentUpon>frmInitCardPwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ConstApp.cs" />
+    <Compile Include="Common\ErrorLog.cs" />
+    <Compile Include="Common\GlobalParams.cs" />
+    <Compile Include="Common\Helper.cs" />
+    <Compile Include="Consumption\frmAssCons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumption\frmAssCons.Designer.cs">
+      <DependentUpon>frmAssCons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consumption\frmAssIgExchange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumption\frmAssIgExchange.Designer.cs">
+      <DependentUpon>frmAssIgExchange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consumption\frmBillReprint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumption\frmBillReprint.Designer.cs">
+      <DependentUpon>frmBillReprint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consumption\frmConsRollBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumption\frmConsRollBack.Designer.cs">
+      <DependentUpon>frmConsRollBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBase.Designer.cs">
+      <DependentUpon>frmBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInputBox.Designer.cs">
+      <DependentUpon>frmInputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintBase.Designer.cs">
+      <DependentUpon>frmPrintBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="amswinsetup.resx">
+      <DependentUpon>amswinsetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Associator\frmAddCard.resx">
+      <DependentUpon>frmAddCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Associator\frmAss.resx">
+      <DependentUpon>frmAss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Associator\frmAssociator.resx">
+      <DependentUpon>frmAssociator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Associator\frmAssociatorCard.resx">
+      <DependentUpon>frmAssociatorCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Associator\frmCardAdd.resx">
+      <DependentUpon>frmCardAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Associator\frmCardCallback.resx">
+      <DependentUpon>frmCardCallback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Associator\frmCardFillFee.resx">
+      <DependentUpon>frmCardFillFee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Associator\frmCardFree.resx">
+      <DependentUpon>frmCardFree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Associator\frmCardLose.resx">
+      <DependentUpon>frmCardLose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Associator\frmCardReturn.resx">
+      <DependentUpon>frmCardReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Associator\frmModifyCardPwd.resx">
+      <DependentUpon>frmModifyCardPwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Associator\frmInitCardPwd.resx">
+      <DependentUpon>frmInitCardPwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumption\frmAssCons.resx">
+      <DependentUpon>frmAssCons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumption\frmAssIgExchange.resx">
+      <DependentUpon>frmAssIgExchange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumption\frmBillReprint.resx">
+      <DependentUpon>frmBillReprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumption\frmConsRollBack.resx">
+      <DependentUpon>frmConsRollBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInputBox.resx">
+      <DependentUpon>frmInputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintBase.resx">
+      <DependentUpon>frmPrintBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmAssInfoQuery.resx">
+      <DependentUpon>frmAssInfoQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmBusiLogQuery.resx">
+      <DependentUpon>frmBusiLogQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmConsQuery.resx">
+      <DependentUpon>frmConsQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmConsSum.resx">
+      <DependentUpon>frmConsSum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmFillQuery.resx">
+      <DependentUpon>frmFillQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmIgQuery.resx">
+      <DependentUpon>frmIgQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\rptBillList.resx">
+      <DependentUpon>rptBillList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\rptBIModle.resx">
+      <DependentUpon>rptBIModle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpxBase.resx">
+      <DependentUpon>rpxBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManage\frmAddRole.resx">
+      <DependentUpon>frmAddRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManage\frmHelp.resx">
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManage\frmOper.resx">
+      <DependentUpon>frmOper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManage\frmParaSet.resx">
+      <DependentUpon>frmParaSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManage\frmPrivilege.resx">
+      <DependentUpon>frmPrivilege.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManage\frmPwd.resx">
+      <DependentUpon>frmPwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManage\usParaSet.resx">
+      <DependentUpon>usParaSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.Config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Report\frmAssInfoQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmAssInfoQuery.Designer.cs">
+      <DependentUpon>frmAssInfoQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frmBusiLogQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmBusiLogQuery.Designer.cs">
+      <DependentUpon>frmBusiLogQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frmConsQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmConsQuery.Designer.cs">
+      <DependentUpon>frmConsQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frmConsSum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmConsSum.Designer.cs">
+      <DependentUpon>frmConsSum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frmFillQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmFillQuery.Designer.cs">
+      <DependentUpon>frmFillQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frmIgQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmIgQuery.Designer.cs">
+      <DependentUpon>frmIgQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\rptBillList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\rptBillList.Designer.cs">
+      <DependentUpon>rptBillList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\rptBIModle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\rptBIModle.Designer.cs">
+      <DependentUpon>rptBIModle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\rptIncome.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\rptIncome.Designer.cs">
+      <DependentUpon>rptIncome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rpxBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpxBase.Designer.cs">
+      <DependentUpon>rpxBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\frmAddRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManage\frmAddRole.Designer.cs">
+      <DependentUpon>frmAddRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\frmHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManage\frmHelp.Designer.cs">
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\frmOper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManage\frmOper.Designer.cs">
+      <DependentUpon>frmOper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\frmParaSet.cs" />
+    <Compile Include="SystemManage\frmParaSet.Designer.cs">
+      <DependentUpon>frmParaSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\frmPrivilege.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManage\frmPrivilege.Designer.cs">
+      <DependentUpon>frmPrivilege.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\frmPwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManage\frmPwd.Designer.cs">
+      <DependentUpon>frmPwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\usParaSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemManage\usParaSet.Designer.cs">
+      <DependentUpon>usParaSet.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CardDLL\Card.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\about.jpg" />
+    <Content Include="Resources\add.gif" />
+    <Content Include="Resources\again.gif" />
+    <Content Include="Resources\ass.gif" />
+    <Content Include="Resources\assinfo.gif" />
+    <Content Include="Resources\assPwd.gif" />
+    <Content Include="Resources\AutoUpdate.exe" />
+    <Content Include="Resources\awokett.gif" />
+    <Content Include="Resources\cancel.gif" />
+    <Content Include="Resources\Card.gif" />
+    <EntityDeploy Include="AMS_FB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AMS_FB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ams_TemporaryKey.pfx" />
+    <None Include="help\福宝会员管理系统帮助.doc" />
+    <None Include="help\福宝会员管理系统帮助.mht" />
+    <None Include="Resources\card\card copy.ico" />
+    <None Include="Resources\card\card delete.ico" />
+    <None Include="Resources\card\card edit.ico" />
+    <None Include="Resources\card\card file.ico" />
+    <None Include="Resources\card\card mark.ico" />
+    <None Include="Resources\card\card new.ico" />
+    <None Include="Resources\card\card update.ico" />
+    <None Include="Resources\card\card view marked.ico" />
+    <Content Include="Resources\clients_48.ico" />
+    <Content Include="Resources\cons.gif" />
+    <Content Include="Resources\cycle.gif" />
+    <Content Include="Resources\del.gif" />
+    <Content Include="Resources\deskEmpty.gif" />
+    <Content Include="Resources\deskFull.gif" />
+    <Content Include="Resources\deskHalf.gif" />
+    <Content Include="Resources\fill.gif" />
+    <Content Include="Resources\GlideCtrl.gif" />
+    <Content Include="Resources\ground.jpg" />
+    <Content Include="Resources\ground.png" />
+    <Content Include="Resources\ground1.jpg" />
+    <Content Include="Resources\help-2.ico" />
+    <Content Include="Resources\igSet.gif" />
+    <Content Include="Resources\login.bmp" />
+    <Content Include="Resources\lost.gif" />
+    <Content Include="Resources\mod.gif" />
+    <Content Include="Resources\prompt.jpg" />
+    <Content Include="Resources\quit.gif" />
+    <Content Include="Resources\right.jpg" />
+    <Content Include="Resources\roomEmpty.gif" />
+    <Content Include="Resources\roomFull.gif" />
+    <Content Include="Resources\splash.jpg" />
+    <Content Include="Resources\top.jpg" />
+    <Content Include="Resources\Uninstall.exe" />
+    <Content Include="Resources\UpdateList.xml" />
+    <None Include="Resources\user\users.ico" />
+    <None Include="Resources\user\useredit.ico" />
+    <None Include="Resources\user\userdelete.ico" />
+    <None Include="Resources\user\useradd.ico" />
+    <None Include="Resources\user\useradd1.ico" />
+    <None Include="Resources\user\user.ico" />
+    <None Include="Resources\user\User3.ico" />
+    <None Include="rpx\BillList.rpx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="rpx\BIModle.rpx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AssociatorCard\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
