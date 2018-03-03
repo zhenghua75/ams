@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="gb2312" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <AutoUpdater>
 	<Description>ams autoUpdate</Description>
 	<Updater>
@@ -18,7 +18,6 @@
 		<File Ver="1.0.0.1" Name= "mwrf32.dll" />
 		<File Ver="1.0.0.1" Name= "ams.vshost.application" />
 		<File Ver="1.0.0.1" Name= "Card.dll" />
-		<File Ver="1.0.0.1" Name= "福宝会员管理系统帮助.mht" />
 		<File Ver="1.0.0.1" Name= "ams.exe.config" />
 		<File Ver="1.0.0.1" Name= "ams.exe.manifest" />
 		<File Ver="1.0.0.1" Name= "ams.application" />

@@ -546,8 +546,6 @@
       <LastGenOutput>AMS_FB.Designer.cs</LastGenOutput>
     </EntityDeploy>
     <None Include="ams_TemporaryKey.pfx" />
-    <None Include="help\福宝会员管理系统帮助.doc" />
-    <None Include="help\福宝会员管理系统帮助.mht" />
     <None Include="Resources\card\card copy.ico" />
     <None Include="Resources\card\card delete.ico" />
     <None Include="Resources\card\card edit.ico" />
